@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Rubik-Bubbles';
+    src: url('../fonts/Rubik_Bubbles/RubikBubbles-Regular.otf');
+}
+
 .menu-bar__container {
-    
+    display: flex;
+    flex-direction: row;
+    background-color: #FFA433;
+    height: 90px;
+
+}
+
+.menu-bar__container .menu-bar_icon p {
+    align-self: flex-start;
+    font-family:'Rubik-Bubbles', sans-serif;
+    display: flex;
+    margin-left: 1rem;
+    margin-top:25px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+
 }
