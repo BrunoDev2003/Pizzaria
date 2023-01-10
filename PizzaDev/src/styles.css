@@ -5,8 +5,11 @@
     border: 0px;
     box-sizing: border-box;
     color: #f7f2ed;
+    position: static;
 }
 
 body {
     background-color: #d6d6d6ef;
+    object-fit: contain;
+    position:static;
 }
