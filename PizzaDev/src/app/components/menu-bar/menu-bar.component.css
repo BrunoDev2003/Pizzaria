@@ -78,6 +78,26 @@
     position:static;
 }
 
+.menu-description {
+    display:grid;
+    grid-column: 1 / span 5;
+    
+    
+    
+}
+
+.menu-description h3 {
+    color: black;
+}
+
+.menu-description .menu-description__box > p {
+    color: black;
+    display: grid;
+    margin-bottom: 3rem;
+    object-fit: cover;
+    
+}
+
 .footer > footer {
     background-color:#FFA433;
     bottom: 0;
