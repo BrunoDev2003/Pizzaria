@@ -6,7 +6,9 @@ import { HomeComponent } from './pages/home/home.component';
 import {PizzaPedidosComponent} from './components/pizza-pedidos/pizza-pedidos.component'
 
 const routes: Routes = [
-
+  { path: 'home', component: MenuBarComponent },
+  { path: 'pizzas', component: PizzaPedidosComponent},
+  
 ];
 
 @NgModule({
