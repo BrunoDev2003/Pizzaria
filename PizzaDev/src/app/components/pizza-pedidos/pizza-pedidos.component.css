@@ -98,6 +98,21 @@
     
 }
 
+.pizza_pedidos_itens .pizza_itens  {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: #010000da;
+    
+}
+
+.pizza_pedidos_itens .pizza_itens > h1, p{
+    color: #010000da;
+    
+    
+}
+
+
 .footer > footer {
     background-color:#FFA433;
     bottom: 0;
