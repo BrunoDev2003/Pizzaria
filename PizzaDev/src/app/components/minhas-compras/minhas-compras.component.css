@@ -3,7 +3,7 @@
     src: url('../fonts/Rubik_Bubbles/RubikBubbles-Regular.otf');
 }
 
-.pizza-pedidos__container {
+.minhas-compras__container {
     background-color: #FFA433;
     display: flex;
     flex-direction: row;
@@ -11,7 +11,7 @@
 
 }
 
-.pizza-pedidos__container .pizza-pedidos_icon p {
+.minhas-compras__container .minhas-compras_icon p {
     align-self: flex-start;
     display: flex;
     font-family:'Rubik-Bubbles', sans-serif;
@@ -22,7 +22,7 @@
 
 }
 
-.pizza-pedidos-item__container {
+.minhas-compras-item__container {
     background-color: #010000da;
     display: flex;
     flex-direction: row;
@@ -30,7 +30,7 @@
     width: 100%;
 }
 
-.pizza-pedidos-item__container .pizza-pedidos-item {
+.minhas-compras-item__container .minhas-compras-item {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -39,11 +39,11 @@
 
 }
 
-.pizza-pedidos-item__container .pizza-pedidos-item p {
+.minhas-compras-item__container .minhas-compras-item p {
     padding: 0.5rem;
 }
 
-.pizza-pedidos-page__container {
+.minhas-compras-page__container {
     display: flex;
     flex-direction: column;
     max-width: fit-content;
@@ -52,17 +52,9 @@
     
 }
 
-.pizza-pedidos {
-    align-items:center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 800px;
-    justify-content:center;
-    object-fit: cover;
-    width:auto;
-}
 
-.pizza-pedidos-page picture img {
+
+.minhas-compras-page picture img {
     background-size: cover; 
     height: 100%;
     max-width: fit-content;
@@ -70,7 +62,7 @@
     width: 800px;
 }
 
-.pizza-pedidos-page > p {
+.minhas-compras-page > p {
     color: black;
     font-style: italic;
     grid-column: 1 / span 3;
@@ -78,7 +70,7 @@
     position:static;
 }
 
-.pizza-pedidos-description {
+.minhas-compras-description {
     display:grid;
     grid-column: 1 / span 5;
     
@@ -86,11 +78,11 @@
     
 }
 
-.pizza-pedidos-description h3 {
+.minhas-compras-description h3 {
     color: black;
 }
 
-.pizza-pedidos-description .pizza-pedidos-description__box > p {
+.minhas-compras-description .minhas-compras-description__box > p {
     color: black;
     display: grid;
     margin-bottom: 3rem;
@@ -98,7 +90,7 @@
     
 }
 
-.pizza_pedidos_itens .pizza_itens  {
+.minhas-compras_itens .compras_itens  {
     align-items:center;
     border: 1px solid black;
     box-shadow: #010000da;
@@ -108,7 +100,7 @@
     
 }
 
-.pizza_pedidos_itens .pizza_itens > h1{
+.minhas-compras_itens .compras_itens > h1{
     color: #010000da;
     
     
