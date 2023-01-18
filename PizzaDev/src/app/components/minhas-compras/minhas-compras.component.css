@@ -95,15 +95,14 @@
     border: 1px solid black;
     box-shadow: #010000da;
     display: flex;
+    margin-bottom: 3rem;
     flex-direction: column;
     justify-content: center;
     
 }
 
-.minhas-compras_itens .compras_itens > h1{
+.minhas-compras_itens .compras_itens > th, td{
     color: #010000da;
-    
-    
 }
 
 

@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PizzaPedidosComponent } from './components/pizza-pedidos/pizza-pedidos.component';
 import { ContentComponent } from './pages/content/content.component';
 import { MinhasComprasComponent } from './components/minhas-compras/minhas-compras.component';
+import { ContatoPedidosComponent } from './components/contato-pedidos/contato-pedidos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MinhasComprasComponent } from './components/minhas-compras/minhas-compr
     HomeComponent,
     PizzaPedidosComponent,
     ContentComponent,
-    MinhasComprasComponent
+    MinhasComprasComponent,
+    ContatoPedidosComponent
   ],
   imports: [
     BrowserModule,

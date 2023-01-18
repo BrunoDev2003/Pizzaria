@@ -5,11 +5,14 @@ import { ContentComponent } from './pages/content/content.component';
 import { HomeComponent } from './pages/home/home.component';
 import {PizzaPedidosComponent} from './components/pizza-pedidos/pizza-pedidos.component';
 import {MinhasComprasComponent} from './components/minhas-compras/minhas-compras.component';
+import {ContatoPedidosComponent} from './components/contato-pedidos/contato-pedidos.component';
+
 
 const routes: Routes = [
   { path: 'home', component: MenuBarComponent },
   { path: 'pizzas', component: PizzaPedidosComponent},
-  { path: 'compras', component:MinhasComprasComponent }
+  { path: 'compras', component:MinhasComprasComponent },
+  { path: 'contato', component:ContatoPedidosComponent}
   
 ];
 
