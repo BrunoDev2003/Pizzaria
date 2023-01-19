@@ -95,9 +95,9 @@
     border: 1px solid black;
     box-shadow: #010000da;
     display: flex;
-    margin-bottom: 3rem;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 3rem;
     
 }
 
