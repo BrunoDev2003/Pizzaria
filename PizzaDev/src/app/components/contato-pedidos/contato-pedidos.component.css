@@ -30,7 +30,7 @@
     width: 100%;
 }
 
-.contato-pedidos-item__container .contatos-pedidos-item {
+.contato-pedidos-item__container .contato-pedidos-item {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -98,6 +98,21 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 3rem;
+    
+    
+}
+
+.contato-pedidos_itens .contato_itens form  {
+    color: black;
+    font-style: black;
+    
+    
+}
+
+.contato-pedidos_itens .contato_itens form input  {
+    color: black;
+    font-style: black;
+    
     
 }
 
