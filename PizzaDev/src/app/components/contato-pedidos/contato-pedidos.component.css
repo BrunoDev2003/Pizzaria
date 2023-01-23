@@ -105,19 +105,25 @@
 .contato-pedidos_itens .contato_itens form  {
     color: black;
     font-style: black;
+    margin: 40px auto;
+    max-width:400px;
+    text-align: center;
     
     
 }
 
-.contato-pedidos_itens .contato_itens form input  {
+.contato-pedidos_itens .contato_itens form input   {
     color: black;
     font-style: black;
     
     
 }
 
-.contato-pedidos_itens .contato_itens > th, td{
-    color: #010000da;
+.contato-pedidos_itens .contato_itens label {
+    text-align: center;
+    color: black;
+    float: left;
+    margin-top: 3rem;
 }
 
 
