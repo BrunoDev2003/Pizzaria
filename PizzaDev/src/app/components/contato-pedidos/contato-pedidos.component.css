@@ -119,6 +119,10 @@
     
 }
 
+.contato-pedidos_itens .contato_itens h1 {
+    color: rgb(38, 205, 82);
+}
+
 .contato-pedidos_itens .contato_itens label {
     text-align: center;
     color: black;
