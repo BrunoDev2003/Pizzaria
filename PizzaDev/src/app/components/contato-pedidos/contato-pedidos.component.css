@@ -130,6 +130,14 @@
     margin-top: 3rem;
 }
 
+.contato-pedidos_itens .contato_itens  textarea {
+    color: black;
+}
+
+.contato-pedidos_itens .contato_itens button {
+    color: black;
+    font-weight: bold;
+}
 
 .footer > footer {
     background-color:#FFA433;

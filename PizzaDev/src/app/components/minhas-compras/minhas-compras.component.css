@@ -95,13 +95,22 @@
     border: 1px solid black;
     box-shadow: #010000da;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin-bottom: 3rem;
     
 }
 
 .minhas-compras_itens .compras_itens > th, td{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    color: #010000da;
+}
+
+.minhas-compras_itens .compras_itens tr th {
     color: #010000da;
 }
 
