@@ -103,11 +103,17 @@
 
 .minhas-compras_itens .compras_itens > th, td{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    justify-content: center;
     padding: 10px;
     align-items: center;
     color: #010000da;
+}
+
+.compras_itens .row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .minhas-compras_itens .compras_itens tr th {
