@@ -108,7 +108,7 @@
     
 }
 
-.pizza_pedidos_itens .pizza_itens > h1{
+.pizza_pedidos_itens .pizza_itens h3,span,strong{
     color: #010000da;
     
     

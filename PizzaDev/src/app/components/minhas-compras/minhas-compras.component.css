@@ -102,22 +102,24 @@
 }
 
 .minhas-compras_itens .compras_itens > th, td{
+    align-items: center;
+    color: #010000da;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     padding: 10px;
-    align-items: center;
-    color: #010000da;
 }
 
 .compras_itens .row1 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
 }
 
 .minhas-compras_itens .compras_itens tr th {
     color: #010000da;
+    padding: 25px;
 }
 
 
