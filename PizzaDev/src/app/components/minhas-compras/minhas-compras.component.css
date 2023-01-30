@@ -101,6 +101,12 @@
     
 }
 
+.minhas-compras_itens .compras_itens p,button {
+    color: #010000da;
+}
+
+
+
 .minhas-compras_itens .compras_itens > th, td{
     align-items: center;
     color: #010000da;
