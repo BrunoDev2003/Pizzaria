@@ -1,3 +1,22 @@
+
+
+<script   src="https://code.jquery.com/jquery-1.12.1.js"   integrity="sha256-VuhDpmsr9xiKwvTIHfYWCIQ84US9WqZsLfR4P7qF6O8="   crossorigin="anonymous">
+    $('document').ready(function() {
+    $('.add_another').click(function() {
+        $("#tbl").append(`'<tr class="row1">
+                            <td> <picture> <img src="/src/assets/img/pexels-kristina-paukshtite-1146760.jpg" alt="Foto-pizza"> </picture> </td>
+                            <td>Nome da Pizza</td>
+                            <td>Tipo pizza</td>
+                            <td>Preço pizza em R$</td>
+                            <td>QTDE pizza</td>
+                            <td>Deletar</td>
+                        </tr>`);
+    });
+})
+</script>
+
+
+
 <div class="minhas-compras__container">
 
     <div class="minhas-compras_icon">
@@ -27,7 +46,7 @@
 
         <div class="minhas-compras_itens">
             <div class="compras_itens">
-                <table summary="Tabela para escolher os itens como o tipo de pizza,
+                <table id="tbl" summary="Tabela para escolher os itens como o tipo de pizza,
                 ver o preço e quantidade, e possibilidade de deletar um pedido"
                 >
                 <caption>Tabela de Pedidos</caption>
@@ -72,8 +91,8 @@
 
 
                 </table>
-                <p>Adicionar item<br>(quando clicar<br> aparece mais<br> uma linha na tabela)</p>
-                <button>Confirmar</button>
+                <input type="submit" class="button add_another" value="add another line"><br>
+                
             </div>
         </div>        
         
