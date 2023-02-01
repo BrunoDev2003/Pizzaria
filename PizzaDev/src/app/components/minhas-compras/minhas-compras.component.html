@@ -48,37 +48,27 @@
                         </tr>
                 </thead>
                 <tbody>
-                        <tr class="row1">
+
+                        <tr *ngFor="let row of pizza_items; let i = index" class="row1">
                             <td> <picture> <img src="/src/assets/img/pexels-kristina-paukshtite-1146760.jpg" alt="Foto-pizza"> </picture> </td>
-                            <td>Nome da Pizza</td>
-                            <td>Tipo pizza</td>
-                            <td>Preço pizza em R$</td>
-                            <td>QTDE pizza</td>
-                            <td>Deletar</td>
+                            <td>{{row.nome}}</td>
+                            <td>{{row.tipo}}</td>
+                            <td>{{row.preco}}</td>
+                            <td>{{row.qtde}}</td>
+                            <td>{{row.delete}}</td>
+                            <td><button (click)="addRow(row)">Add</button></td>
                         </tr>
 
-                        <tr class="row1">
-                            <td> <picture> <img src="/src/assets/img/pexels-kristina-paukshtite-1146760.jpg" alt="Foto-pizza"> </picture> </td>
-                            <td>Nome da Pizza</td>
-                            <td>Tipo pizza</td>
-                            <td>Preço pizza em R$</td>
-                            <td>QTDE pizza</td>
-                            <td>Deletar</td>
-                        </tr>
+                        
 
-                        <tr class="row1">
-                            <td> <picture> <img src="/src/assets/img/pexels-kristina-paukshtite-1146760.jpg" alt="Foto-pizza"> </picture> </td>
-                            <td>Nome da Pizza</td>
-                            <td>Tipo pizza</td>
-                            <td>Preço pizza em R$</td>
-                            <td>QTDE pizza</td>
-                            <td>Deletar</td>
-                        </tr>
+                        
+
+
                 </tbody>
 
 
                 </table>
-                <input type="submit" class="button add_another" value="add another line">
+                
                 
             </div>
         </div>        
