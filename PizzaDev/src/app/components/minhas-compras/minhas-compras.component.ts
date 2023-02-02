@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
+import {ApiService} from "../service/api.service";
 
 @Component({
   selector: 'app-minhas-compras',
@@ -6,6 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./minhas-compras.component.css']
 })
 export class MinhasComprasComponent {
+
+  constructor(private apiService: ApiService) {}
+  
+
 
   addRow(row: {
     image: string; 
@@ -27,4 +33,15 @@ export class MinhasComprasComponent {
       "delete": "Deletar"
     }
   ];
+  
+  onSubmit() {
+    this.apiService.pizza_items(this.addRow).subscribe((data: {
+      result: any; status: number; 
+}) => {
+      debugger;
+      if(data.status === 200) {
+        window.localStorage.setItem('token',data.result.token);
+      }
+    })
+  }
 }
