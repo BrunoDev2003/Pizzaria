@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {ApiService} from "../service/api.service";
+import {ApiServiceComponent} from "../api-service/api-service.component";
 
 @Component({
   selector: 'app-minhas-compras',
@@ -9,7 +9,7 @@ import {ApiService} from "../service/api.service";
 })
 export class MinhasComprasComponent {
 
-  constructor(private apiService: ApiService) {}
+  constructor(private ApiServiceComponent: ApiServiceComponent) { }
   
 
 
@@ -35,7 +35,7 @@ export class MinhasComprasComponent {
   ];
   
   onSubmit() {
-    this.apiService.pizza_items(this.addRow).subscribe((data: {
+    this.ApiServiceComponent.pizza(this.addRow).subscribe((data: {
       result: any; status: number; 
 }) => {
       debugger;

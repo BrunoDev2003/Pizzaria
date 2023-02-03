@@ -9,6 +9,7 @@ import { PizzaPedidosComponent } from './components/pizza-pedidos/pizza-pedidos.
 import { ContentComponent } from './pages/content/content.component';
 import { MinhasComprasComponent } from './components/minhas-compras/minhas-compras.component';
 import { ContatoPedidosComponent } from './components/contato-pedidos/contato-pedidos.component';
+import { ApiServiceComponent } from '../app/components/api-service/api-service.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,14 @@ import { ContatoPedidosComponent } from './components/contato-pedidos/contato-pe
     PizzaPedidosComponent,
     ContentComponent,
     MinhasComprasComponent,
-    ContatoPedidosComponent
+    ContatoPedidosComponent,
+    ApiServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ApiServiceComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
