@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./api-service.component.css']
 })
 export class ApiServiceComponent {
+  deleteRow(id: any) {
+    throw new Error('Method not implemented.');
+  }
   pizza: any;
 
 }
