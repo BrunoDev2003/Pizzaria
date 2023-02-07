@@ -24,6 +24,7 @@ export class MinhasComprasComponent implements OnInit {
 
 
   addRow(row: {
+    id: number;
     image: string; 
     nome: string; 
     tipo: string; 
@@ -47,6 +48,7 @@ export class MinhasComprasComponent implements OnInit {
 
   //TODO: Fix the bugs on deleteRow and put id's on each row to delete them.
   deleteRow(row: {
+    id: number;
     image: string; 
     nome: string; 
     tipo: string; 
@@ -54,7 +56,7 @@ export class MinhasComprasComponent implements OnInit {
     qtde: string;
     delete: string;
   }): void {
-    this.ApiServiceComponent.deleteRow(row.id).subscribe( data => {
+      this.ApiServiceComponent.deleteRow(row.id).subscribe( data => {
       this.pizza_items.filter(u => u !== row);
     })
   }
