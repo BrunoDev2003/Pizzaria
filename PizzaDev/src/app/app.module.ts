@@ -10,6 +10,7 @@ import { ContentComponent } from './pages/content/content.component';
 import { MinhasComprasComponent } from './components/minhas-compras/minhas-compras.component';
 import { ContatoPedidosComponent } from './components/contato-pedidos/contato-pedidos.component';
 import { ApiServiceComponent } from '../app/components/api-service/api-service.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ApiServiceComponent } from '../app/components/api-service/api-service.c
     ContentComponent,
     MinhasComprasComponent,
     ContatoPedidosComponent,
-    ApiServiceComponent
+    ApiServiceComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

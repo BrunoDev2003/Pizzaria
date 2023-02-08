@@ -1,0 +1,22 @@
+<div class="row__container">
+
+    <div class="login__container">
+        <h2 style="margin: auto">Login to PizzaDev</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="username">UserName:</label>
+                <input type="text" class="form-control" formControlName="username" id="username" autocomplete="off">
+                <div class="error" *ngIf="loginForm.controls['username'].hasError('required')&& loginForm.controls['username'].touched">Username is required</div>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" formControlName="password" id="password" id="pwd" autocomplete="off">
+                <div class="error" *ngIf="loginForm.controls['password'].hasError('required')&&loginForm.controls['password'].touched">Password is required!</div>
+            </div>
+            <button class="btn btn-success"[disabled]="loginForm.invalid">Login</button>
+            <div *ngIf="invalidLogin" class="error">
+                <div>Invalid Credentials!</div>
+            </div>
+        </form>
+    </div>
+</div>
