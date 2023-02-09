@@ -6,11 +6,12 @@ import { Injectable } from '@angular/core';
 @Injectable()
 
 export class ApiService {
+  status: number;
   constructor(private http: HttpClient) { }
     Url: string = ('http://localhost:4200/');
 
     login(username: string, password: string): Observable<ApiService> {
-      return this.http.post<ApiService>('http://localhost:4200/' + 'token/generate-token');
+      return this.http.post<ApiService>('http://localhost:4200/' + 'token/generate-token', username);
     }
 }
 export class ApiServiceComponent {
