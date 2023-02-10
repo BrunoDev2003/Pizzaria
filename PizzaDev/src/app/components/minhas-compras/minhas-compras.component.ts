@@ -56,7 +56,7 @@ export class MinhasComprasComponent implements OnInit {
     qtde: string;
     delete: string;
   }): void {
-      this.ApiServiceComponent.deleteRow(row.id).subscribe( data => {
+      this.ApiServiceComponent.deleteUser(row.id).subscribe( data => {
       this.pizza_items.filter(u => u !== row);
     })
   }

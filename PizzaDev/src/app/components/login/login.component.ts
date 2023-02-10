@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
     const loginPayload = {
       username: this.loginForm.controls.username.value,
-      password: this.loginForm.controls.password.value
+      password: this.loginForm.controls['password'].value
     }
 
     this.apiService.login(loginPayload).subscribe(data => {
