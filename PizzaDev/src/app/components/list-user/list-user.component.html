@@ -15,7 +15,16 @@
 
         <tbody>
             <tr *ngFor="let user of users">
+                <td class="hidden"></td> 
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button class="btn-success" (click)="deleteUser(user)">Delete</button>
+                    <button class="btn-success" (click)="editUser(user)" style="margin-left: 20px;">Edit</button>
+                </td>
             </tr>
         </tbody>
     </table>
