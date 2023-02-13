@@ -11,6 +11,7 @@ import { MinhasComprasComponent } from './components/minhas-compras/minhas-compr
 import { ContatoPedidosComponent } from './components/contato-pedidos/contato-pedidos.component';
 import { ApiServiceComponent } from '../app/components/api-service/api-service.component';
 import { LoginComponent } from './components/login/login.component';
+import { ListUserComponent } from './components/list-user/list-user.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LoginComponent } from './components/login/login.component';
     MinhasComprasComponent,
     ContatoPedidosComponent,
     ApiServiceComponent,
-    LoginComponent
+    LoginComponent,
+    ListUserComponent
   ],
   imports: [
     BrowserModule,

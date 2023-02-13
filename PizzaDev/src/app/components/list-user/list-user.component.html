@@ -1,0 +1,22 @@
+<div class="list-view-container">
+    <h2 style="margin: auto">User details</h2>
+    <button class="btn-add" style="width: 100px"(click)="addUser()">Add User</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="hidden">Id</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>UserName</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
