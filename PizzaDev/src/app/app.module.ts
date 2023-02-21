@@ -13,6 +13,7 @@ import { ApiServiceComponent } from '../app/components/api-service/api-service.c
 import { LoginComponent } from './components/login/login.component';
 import { ListUserComponent } from './components/list-user/list-user.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
+import { EditUserComponent } from './components/edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AddUserComponent } from './components/add-user/add-user.component';
     ApiServiceComponent,
     LoginComponent,
     ListUserComponent,
-    AddUserComponent
+    AddUserComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,
