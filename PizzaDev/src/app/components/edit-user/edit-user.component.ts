@@ -37,6 +37,17 @@ export class EditUserComponent implements OnInit {
   }
 
   onSubmit(): void {
+    this.apiService.updateUser(this.editForm.value).pipe(first()).subscribe( data => {
+      if(data.status === 200) {
+        alert('User updated successfully.');
+        this.router.navigate(['list-user']);
+      } else {
+        alert(data.message);
+      }
+    }, (err: { message: any; }) => {
+      alert(err.message);
+    }
     
+    );
   }
 }
