@@ -3,7 +3,7 @@ import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {first} from "rxjs/operators";
 import {User} from "../../model/user.model";
-import {ApiService} from "../../service/api.service";
+import {ApiService} from "../api-service";
 
 
 @Component({
@@ -31,14 +31,14 @@ export class EditUserComponent implements OnInit {
       lastName: ['', Validators.required],
       age: ['', Validators.required]
     });
-    this.apiService.getUserById(+userId).subscribe( data => {
+    this.apiService.getUserById(+userId).subscribe( (data: { result: { [key: string]: any; }; }) => {
       this.editForm.setValue(data.result);
     });
 
   }
 
   onSubmit(): void {
-    this.apiService.updateUser(this.editForm.value).pipe(first()).subscribe( data => {
+    this.apiService.updateUser(this.editForm.value).pipe(first()).subscribe( (data: { status: number; message: any; }) => {
       if(data.status === 200) {
         alert('User updated successfully.');
         this.router.navigate(['list-user']);

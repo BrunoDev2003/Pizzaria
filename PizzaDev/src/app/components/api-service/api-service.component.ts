@@ -3,7 +3,7 @@ import { map, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {User} from '../../models/user';
-import {ApiResponse} from './../services/api-response';
+import {ApiResponse} from '../api-response';
 
 @Injectable()
 
