@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, Injectable } from '@angular/core';
 import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {first} from "rxjs/operators";
@@ -10,6 +10,10 @@ import {ApiService} from "../api-service";
   selector: 'app-edit-user',
   templateUrl: './edit-user.component.html',
   styleUrls: ['./edit-user.component.css']
+})
+
+@Injectable({
+  providedIn: 'root'
 })
 export class EditUserComponent implements OnInit {
   user: User;

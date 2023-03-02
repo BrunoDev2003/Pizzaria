@@ -8,6 +8,17 @@ import {ApiResponse} from '../api-response';
 @Injectable()
 
 export class ApiService {
+  users: any;
+  apiService: any;
+  deleteUser(userId: string) {
+    this.apiService.deleteUser(userId).subscribe( (data: any) => {
+      this.users = this.users.filter((user: { id: any; }) => user.id === data);
+      return this.users;
+    })
+  }
+  getUsers() {
+    return User;
+  }
   //status: number;
 
   constructor(private http: HttpClient) { }

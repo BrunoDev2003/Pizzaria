@@ -10,6 +10,7 @@ import {ApiService} from '../api-service/api-service.component';
   styleUrls: ['./list-user.component.css']
 })
 export class ListUserComponent {
+  users: any;
 
   constructor(private router: Router, private apiService: ApiService) { }
 
@@ -18,14 +19,14 @@ export class ListUserComponent {
       this.router.navigate(['login']);
       return;
     }
-    this.apiService.getUsers().subscribe(data => {
+    this.apiService.getUsers().subscribe((data: { result: any; }) => {
       this.users = data.result;
     });
   }
 
   deleteUser(userId: string) {
-    this.apiService.deleteUser(userId).subscribe(data => {
-      this.users = this.users.filter(u => u !== user);
+    this.apiService.deleteUser(userId).subscribe((data: any) => {
+      this.users = this.users.filter((u: any) => u !== user);
     })
   };
   editUser(userId: string): void {
