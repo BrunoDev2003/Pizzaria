@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {ApiService} from "../api-service/api-service.component";
+import {ApiServiceComponent} from "../api-service/api-service.component"
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
@@ -20,7 +21,7 @@ export class LoginComponent implements OnInit {
     }
 
     const loginPayload = {
-      username: this.loginForm.controls.username.value,
+      username: this.loginForm.controls['username'].value,
       password: this.loginForm.controls['password'].value
     }
 

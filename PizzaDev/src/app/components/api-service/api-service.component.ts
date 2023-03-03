@@ -10,6 +10,8 @@ import {ApiResponse} from '../api-response';
 export class ApiService {
   users: any;
   apiService: any;
+  status!: number;
+  result: any;
   deleteUser(userId: string) {
     this.apiService.deleteUser(userId).subscribe( (data: any) => {
       this.users = this.users.filter((user: { id: any; }) => user.id === data);
@@ -19,7 +21,10 @@ export class ApiService {
   getUsers() {
     return User;
   }
-  //status: number;
+
+  login(loginPayload: { username: any; password: any; }): Observable<ApiService> {
+    return this.http.post<ApiService>('http://localhost:4200/' + 'token/generate-token', loginPayload);
+  }
 
   constructor(private http: HttpClient) { }
     Url: string = ('http://localhost:4200/');
