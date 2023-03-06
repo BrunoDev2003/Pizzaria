@@ -1,7 +1,7 @@
 import { Component,OnInit,Inject } from '@angular/core';
 import {Router} from "@angular/router";
 import { data } from 'jquery';
-import {ApiService} from '../api-service/api-service.component';
+import {ApiService} from '../services/api-service/api-service.component';
 
 
 @Component({

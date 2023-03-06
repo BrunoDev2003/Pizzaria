@@ -9,7 +9,8 @@ import { PizzaPedidosComponent } from './components/pizza-pedidos/pizza-pedidos.
 import { ContentComponent } from './pages/content/content.component';
 import { MinhasComprasComponent } from './components/minhas-compras/minhas-compras.component';
 import { ContatoPedidosComponent } from './components/contato-pedidos/contato-pedidos.component';
-import { ApiService, ApiServiceComponent } from '../app/components/api-service/api-service.component';
+import { ApiServiceComponent } from './components/services/api-service/api-service.component';
+import { ApiService } from './components/services/api-service/api-service.component'
 import { LoginComponent } from './components/login/login.component';
 import { ListUserComponent } from './components/list-user/list-user.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
@@ -24,7 +25,6 @@ import { EditUserComponent } from './components/edit-user/edit-user.component';
     ContentComponent,
     MinhasComprasComponent,
     ContatoPedidosComponent,
-    ApiServiceComponent,
     LoginComponent,
     ListUserComponent,
     AddUserComponent,

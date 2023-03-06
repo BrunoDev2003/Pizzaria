@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {ApiService} from "../api-service/api-service.component";
-import {ApiServiceComponent} from "../api-service/api-service.component"
+import {ApiService} from "../services/api-service/api-service.component";
+import {ApiServiceComponent} from "../services/api-service/api-service.component"
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({

@@ -22,12 +22,30 @@ export class ApiService {
     return User;
   }
 
+  createUser(user: any): Observable<ApiResponse> {
+    return this.http.post<ApiResponse>(this.Url,user);
+  }
+
+  updateUser(user: any): Observable<ApiResponse> {
+    return this.http.put<ApiResponse>(this.Url + user.id, user);
+  }
+
   login(loginPayload: { username: any; password: any; }): Observable<ApiService> {
     return this.http.post<ApiService>('http://localhost:4200/' + 'token/generate-token', loginPayload);
   }
 
+  getUserById(id: any): Observable<ApiResponse> {
+    return this.http.get<ApiResponse>(this.Url + id);
+  }
+
+  getError(getError: any): Observable<any[]> {
+    return this.http.get<ApiResponse>(this.Url + getError);
+  }
+  pizza: any;
+
   constructor(private http: HttpClient) { }
     Url: string = ('http://localhost:4200/');
+    
 }
 export class ApiServiceComponent {
   constructor(private http: HttpClient) { }

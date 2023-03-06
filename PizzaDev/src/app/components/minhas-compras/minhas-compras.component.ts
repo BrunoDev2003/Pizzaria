@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {ApiServiceComponent} from "../api-service/api-service.component";
+import {ApiServiceComponent} from "../services/api-service/api-service.component";
 import { PizzaPedidosComponent } from '../pizza-pedidos/pizza-pedidos.component';
 
 @Component({
