@@ -2,6 +2,7 @@ import { Component,OnInit,Inject } from '@angular/core';
 import {Router} from "@angular/router";
 import { data } from 'jquery';
 import {ApiService} from '../services/api-service/api-service.component';
+import {User} from '../../model/user.models';
 
 
 @Component({
@@ -10,7 +11,7 @@ import {ApiService} from '../services/api-service/api-service.component';
   styleUrls: ['./list-user.component.css']
 })
 export class ListUserComponent {
-  users: any;
+  users: User[] = [];
 
   constructor(private router: Router, private apiService: ApiService) { }
 
@@ -24,8 +25,8 @@ export class ListUserComponent {
     });
   }
 
-  deleteUser(userId: string) {
-    this.apiService.deleteUser(userId).subscribe((data: any) => {
+  deleteUser(user: User): void {
+    this.apiService.deleteUser(user.id).subscribe((data: any) => {
       this.users = this.users.filter((u: any) => u !== user);
     })
   };

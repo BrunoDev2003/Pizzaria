@@ -2,7 +2,7 @@ import { Component, OnInit, Inject, Injectable } from '@angular/core';
 import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {first} from "rxjs/operators";
-import {User} from "../../model/user.model";
+import {User} from "../../model/user.models";
 import {ApiService} from "../../components/services/api-service/api-service.component";
 
 
@@ -16,7 +16,7 @@ import {ApiService} from "../../components/services/api-service/api-service.comp
   providedIn: 'root'
 })
 export class EditUserComponent implements OnInit {
-  user: User;
+  user: User = new User;
   editForm!: FormGroup;
   constructor(private formBuilder: FormBuilder, private router: Router, private apiService: ApiService) { }
 
