@@ -12,12 +12,17 @@ export class ApiService {
   apiService: any;
   status!: number;
   result: any;
-  deleteUser(userId: string) {
+
+
+  deleteUser(userId: number) {
     this.apiService.deleteUser(userId).subscribe( (data: any) => {
       this.users = this.users.filter((user: { id: any; }) => user.id === data);
       return this.users;
     })
+    return this.apiService.deleteUser(userId);
   }
+
+
   getUsers() {
     return User;
   }

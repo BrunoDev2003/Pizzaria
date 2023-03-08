@@ -25,14 +25,14 @@ export class ListUserComponent {
     });
   }
 
-  deleteUser(user: User): void {
+  deleteUser(user: User) {
     this.apiService.deleteUser(user.id).subscribe((data: any) => {
       this.users = this.users.filter((u: any) => u !== user);
     })
   };
-  editUser(userId: string): void {
+  editUser(user: User): void {
     window.localStorage.removeItem("editUserId");
-    window.localStorage.setItem("editUserId", user.id.toString(userId));
+    window.localStorage.setItem("editUserId", user.id.toString());
     this.router.navigate(['add-user']);
   };
 
