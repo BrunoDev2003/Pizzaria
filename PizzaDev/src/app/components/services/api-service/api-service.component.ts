@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {User} from '../../models/user';
-import {ApiResponse} from '../api-response';
+import {User} from '../../../model/user.models';
+import {ApiResponse} from '../../../model/api.response';
 
 @Injectable()
 
