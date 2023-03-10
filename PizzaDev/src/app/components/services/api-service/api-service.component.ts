@@ -43,9 +43,6 @@ export class ApiService {
     return this.http.get<ApiResponse>(this.Url + id);
   }
 
-  getError(getError: any): Observable<any[]> {
-    return this.http.get<ApiResponse>(this.Url + getError);
-  }
   pizza: any;
 
   constructor(private http: HttpClient) { }
@@ -84,10 +81,6 @@ export class ApiServiceComponent {
     return this.http.delete<ApiResponse>(this.Url + id);
   }
 
-
-  getError(getError: any): Observable<any[]> {
-    return this.http.get<ApiResponse>(this.Url + getError);
-  }
   pizza: any;
 
 }
