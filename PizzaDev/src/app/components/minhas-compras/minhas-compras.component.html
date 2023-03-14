@@ -39,6 +39,7 @@
                 <caption>Tabela de Pedidos</caption>
                 <thead>
                         <tr class="row1">
+                            <th>Id</th>
                             <th>Image</th>
                             <th>Nome</th><br>
                             <th>Tipo</th><br>
@@ -51,6 +52,7 @@
 
                         <tr *ngFor="let row of pizza_items; let i = index" class="row1">
                             <td> <picture> <img src="/src/assets/img/pexels-kristina-paukshtite-1146760.jpg" alt="Foto-pizza"> </picture> </td>
+                            <td>{{row.id}}</td>
                             <td>{{row.nome}}</td>
                             <td>{{row.tipo}}</td>
                             <td>{{row.preco}}</td>

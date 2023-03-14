@@ -37,6 +37,7 @@ export class MinhasComprasComponent implements OnInit {
   }
   pizza_items=[
     {
+      "id": 1,
       "image": "<picture></picture>",
       "nome": "Nome da pizza",
       "tipo": "Tipo pizza",
