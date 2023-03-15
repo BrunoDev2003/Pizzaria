@@ -12,7 +12,9 @@ export class AddUserComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder, private router: Router, private apiService: ApiService) { }
 
-  addForm!: FormGroup;
+  addForm: FormGroup = new FormGroup({
+
+  })
 
   ngOnInit(): void {
     this.addForm = this.formBuilder.group({

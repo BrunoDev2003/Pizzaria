@@ -47,7 +47,7 @@ export class MinhasComprasComponent implements OnInit {
     }
   ];
 
-  //TODO: Fix the bugs on deleteRow and put id's on each row to delete them.
+  
   deleteRow(row: {
     id: number;
     image: string; 
