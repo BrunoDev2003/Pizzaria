@@ -39,7 +39,11 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [ApiService],
+  providers: [
+    ApiService,
+    ApiServiceComponent
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

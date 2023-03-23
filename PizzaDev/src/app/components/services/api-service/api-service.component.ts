@@ -13,6 +13,9 @@ export class ApiService {
   status!: number;
   result: any;
 
+  constructor(private http: HttpClient) { }
+    Url: string = ('http://localhost:4200/');
+
 
   deleteUser(userId: number) {
     this.apiService.deleteUser(userId).subscribe( (data: any) => {
@@ -45,10 +48,11 @@ export class ApiService {
 
   pizza: any;
 
-  constructor(private http: HttpClient) { }
-    Url: string = ('http://localhost:4200/');
+  
     
 }
+
+@Injectable()
 export class ApiServiceComponent {
   constructor(private http: HttpClient) { }
   Url: string = ('http://localhost:4200/');
