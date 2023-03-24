@@ -1,12 +1,11 @@
 import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from "@angular/common/http";
 import {Observable} from "rxjs/internal/Observable";
 import {Injectable} from "@angular/core";
-import { Observer } from "rxjs";
 
 @Injectable()
 export class TokenInterceptor implements HttpInterceptor {
 
-    intercept(req:HttpRequest<any> , next:HttpHandler): Observable<any> {
+    intercept(req:HttpRequest<any> , next:HttpHandler): Observable<HttpEvent<any>> {
         let token = window.localStorage.getItem('token');
         if (token) {
             req = req.clone({

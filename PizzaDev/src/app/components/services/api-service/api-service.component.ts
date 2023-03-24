@@ -17,7 +17,7 @@ export class ApiService {
     Url: string = ('http://localhost:4200/');
 
 
-  deleteUser(userId: number) {
+  deleteUser(userId: number): Observable<ApiResponse> {
     this.apiService.deleteUser(userId).subscribe( (data: any) => {
       this.users = this.users.filter((user: { id: any; }) => user.id === data);
       return this.users;
@@ -38,8 +38,8 @@ export class ApiService {
     return this.http.put<ApiResponse>(this.Url + user.id, user);
   }
 
-  login(loginPayload: { username: any; password: any; }): Observable<ApiService> {
-    return this.http.post<ApiService>('http://localhost:4200/' + 'token/generate-token', loginPayload);
+  login(loginPayload: { username: any; password: any; }): Observable<ApiResponse> {
+    return this.http.post<ApiResponse>('http://localhost:4200/' + 'token/generate-token', loginPayload);
   }
 
   getUserById(id: any): Observable<ApiResponse> {
@@ -60,12 +60,11 @@ export class ApiServiceComponent {
   users: User[] = [];
   apiService: any;
 
-  login(loginPayload: { username: any; password: any; }): Observable<ApiService> {
-    return this.http.post<ApiService>('http://localhost:4200/' + 'token/generate-token', loginPayload);
+  login(loginPayload: { username: any; password: any; }): Observable<ApiResponse> {
+    return this.http.post<ApiResponse>('http://localhost:4200/' + 'token/generate-token', loginPayload);
   }
 
   getUser(): Observable<ApiResponse> {
-    const url = '';
     return this.http.get<ApiResponse>(this.Url);
   }
 

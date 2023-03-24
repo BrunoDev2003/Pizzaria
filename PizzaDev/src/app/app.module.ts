@@ -16,7 +16,8 @@ import { ListUserComponent } from './components/list-user/list-user.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import {TokenInterceptor} from "./interceptor";
 
 @NgModule({
   declarations: [
@@ -40,9 +41,12 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [
-    ApiService,
+    ApiService, {provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    },
     ApiServiceComponent
-  
+    
   ],
   bootstrap: [AppComponent]
 })
